@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - Subscription Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4 font-sans">
+
+<div class="relative bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-lg hover:border-gray-300 transition-all duration-300 w-full max-w-[340px] p-8 overflow-hidden">
+
+    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-green-400 via-teal-400 to-cyan-500"></div>
+
+    <h2 class="text-xl font-bold text-gray-800 mt-2">Starter</h2>
+
+    <div class="inline-block mt-4 px-2.5 py-1 bg-gray-100 text-gray-600 text-[11px] font-medium rounded">
+        7-days free then:
+    </div>
+
+    <div class="mt-2 flex items-baseline">
+        <span class="text-[40px] font-bold text-gray-900 leading-none">$83.25</span>
+        <span class="text-gray-400 text-sm ml-1 font-medium">/month</span>
+    </div>
+    <p class="text-[13px] text-gray-500 mt-2 font-medium">Billed yearly at <span class="text-gray-600">$999.00</span></p>
+
+    <button class="mt-6 w-full py-2.5 px-4 rounded text-sm font-bold text-gray-500 bg-gray-200 border border-transparent hover:bg-white hover:text-gray-700 hover:border-gray-300 transition-colors">
+        Downgrade to Starter
+    </button>
+
+    <hr class="my-6 border-gray-100">
+
+    <ul class="space-y-4">
+
+        <li class="flex items-start">
+            <svg class="w-4 h-4 text-green-400 mr-3 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 1L14.4 9.6L23 12L14.4 14.4L12 23L9.6 14.4L1 12L9.6 9.6L12 1Z" />
+            </svg>
+            <div>
+                <p class="text-gray-700 text-[14px]">Primary user + 0 free team members</p>
+                <p class="text-gray-500 text-[13px] mt-0.5">(extra team members for $35/month)</p>
+            </div>
+        </li>
+
+        <li class="flex items-start">
+            <svg class="w-4 h-4 text-green-400 mr-3 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 1L14.4 9.6L23 12L14.4 14.4L12 23L9.6 14.4L1 12L9.6 9.6L12 1Z" />
+            </svg>
+            <p class="text-gray-700 text-[14px]">Save unlimited properties</p>
+        </li>
+
+        <li class="flex items-start">
+            <svg class="w-4 h-4 text-green-400 mr-3 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 1L14.4 9.6L23 12L14.4 14.4L12 23L9.6 14.4L1 12L9.6 9.6L12 1Z" />
+            </svg>
+            <div>
+                <p class="text-gray-700 text-[14px]"><span class="font-bold text-gray-800">10 000</span> exports</p>
+                <p class="text-gray-500 text-[13px] mt-0.5">(additional exports at $0.02 each)</p>
+            </div>
+        </li>
+
+        <li class="flex items-start">
+            <svg class="w-4 h-4 text-green-400 mr-3 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 1L14.4 9.6L23 12L14.4 14.4L12 23L9.6 14.4L1 12L9.6 9.6L12 1Z" />
+            </svg>
+            <div>
+                <p class="text-gray-700 text-[14px]"><span class="font-bold text-gray-800">500</span> free skip traces</p>
+                <p class="text-gray-500 text-[13px] mt-0.5">(additional skip tracing at $0.08 each)</p>
+            </div>
+        </li>
+
+        <li class="flex items-start">
+            <svg class="w-4 h-4 text-green-400 mr-3 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 1L14.4 9.6L23 12L14.4 14.4L12 23L9.6 14.4L1 12L9.6 9.6L12 1Z" />
+            </svg>
+            <p class="text-gray-700 text-[14px]">Imports $0.01</p>
+        </li>
+
+    </ul>
+</div>
+
+</body>
+</html>
