@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - Table Component</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 p-4 md:p-8 font-sans text-gray-800">
+
+<div class="max-w-5xl mx-auto">
+    <h1 class="text-xl font-normal text-gray-800 mb-4">Варіант 3</h1>
+
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+
+        <div class="flex justify-between items-center px-4 py-3 border-b border-gray-100">
+            <div class="text-sm text-gray-500">
+                0 selected
+            </div>
+            <div class="flex items-center space-x-6 text-sm text-gray-700">
+                <button class="flex items-center space-x-2 hover:text-black transition-colors">
+                    <i class="fa-solid fa-bars-staggered text-gray-400"></i>
+                    <span>Sort by</span>
+                </button>
+                <button class="flex items-center space-x-2 hover:text-black transition-colors">
+                    <i class="fa-solid fa-ellipsis-vertical text-gray-400"></i>
+                    <span>Actions</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left whitespace-nowrap">
+                <thead class="bg-white text-gray-500 border-b border-gray-100">
+                <tr>
+                    <th scope="col" class="px-4 py-3 font-medium w-12">
+                        <div class="flex items-center space-x-1">
+                            <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                            <i class="fa-solid fa-chevron-down text-[10px] ml-1 cursor-pointer"></i>
+                        </div>
+                    </th>
+                    <th scope="col" class="px-4 py-3 font-normal">Name</th>
+                    <th scope="col" class="px-4 py-3 font-normal text-center">Properties</th>
+                    <th scope="col" class="px-4 py-3 font-normal text-center">Created by</th>
+                    <th scope="col" class="px-4 py-3 font-normal">Last updated</th>
+                    <th scope="col" class="px-4 py-3 font-normal w-10"></th>
+                </tr>
+                </thead>
+
+                <tbody class="divide-y divide-gray-100">
+                <tr class="hover:bg-gray-50 transition-colors cursor-default">
+                    <td class="px-4 py-4">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                    </td>
+                    <td class="px-4 py-4 text-gray-700">denver</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">24</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">Me</td>
+                    <td class="px-4 py-4 text-gray-500">02/27/2026 at 1:41PM</td>
+                    <td class="px-4 py-4 text-right">
+                        <button class="text-gray-400 hover:text-gray-700 px-2 cursor-pointer">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </td>
+                </tr>
+
+                <tr class="hover:bg-gray-50 transition-colors cursor-default">
+                    <td class="px-4 py-4">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                    </td>
+                    <td class="px-4 py-4 text-gray-700">test save</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">10</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">Me</td>
+                    <td class="px-4 py-4 text-gray-500">02/10/2026 at 5:52PM</td>
+                    <td class="px-4 py-4 text-right">
+                        <button class="text-gray-400 hover:text-gray-700 px-2 cursor-pointer">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </td>
+                </tr>
+
+                <tr class="hover:bg-gray-50 transition-colors cursor-default">
+                    <td class="px-4 py-4">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                    </td>
+                    <td class="px-4 py-4 text-gray-700">gggg</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">10</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">Me</td>
+                    <td class="px-4 py-4 text-gray-500">02/04/2026 at 5:49PM</td>
+                    <td class="px-4 py-4 text-right">
+                        <button class="text-gray-400 hover:text-gray-700 px-2 cursor-pointer">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </td>
+                </tr>
+
+                <tr class="hover:bg-gray-50 transition-colors cursor-default">
+                    <td class="px-4 py-4">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                    </td>
+                    <td class="px-4 py-4 text-gray-700">test full export</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">4059</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">Me</td>
+                    <td class="px-4 py-4 text-gray-500">02/02/2026 at 11:19AM</td>
+                    <td class="px-4 py-4 text-right">
+                        <button class="text-gray-400 hover:text-gray-700 px-2 cursor-pointer">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </td>
+                </tr>
+
+                <tr class="hover:bg-gray-50 transition-colors cursor-default">
+                    <td class="px-4 py-4">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                    </td>
+                    <td class="px-4 py-4 text-gray-700">denver 1</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">14</td>
+                    <td class="px-4 py-4 text-gray-700 text-center">Me</td>
+                    <td class="px-4 py-4 text-gray-500">01/23/2026 at 9:20AM</td>
+                    <td class="px-4 py-4 text-right">
+                        <button class="text-gray-400 hover:text-gray-700 px-2 cursor-pointer">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="flex items-center justify-between px-4 py-3 border-t border-gray-100">
+            <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">Show</span>
+                <select class="border border-gray-200 rounded px-2 py-1 text-gray-700 focus:outline-none focus:border-gray-300 cursor-pointer">
+                    <option>5</option>
+                </select>
+                <span class="ml-2">of 5 results</span>
+            </div>
+
+            <div>
+                <button class="w-8 h-8 rounded-full border border-green-400 text-green-500 flex items-center justify-center text-sm font-medium hover:bg-green-50 transition-colors cursor-pointer">
+                    1
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
