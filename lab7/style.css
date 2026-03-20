@@ -1,0 +1,14 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+#elid {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    left: 0;
+    transition: left 0.5s;
+    margin-top: 20px;
+}
