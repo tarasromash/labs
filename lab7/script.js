@@ -14,6 +14,7 @@ console.log("admin =", admin);
 // Завдання 3
 let counties = [];
 
+
 async function fetchData() {
     const response = await fetch("https://api.census.gov/data/2020/acs/acs5/profile?get=NAME&for=county:*");
     const data = await response.json();
