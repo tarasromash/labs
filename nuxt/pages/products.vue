@@ -12,6 +12,7 @@ const columns = [
   { key: 'title',       label: 'Назва',     sortable: true },
   { key: 'description', label: 'Опис',      sortable: false },
   { key: 'price',       label: 'Ціна ($)',  sortable: true },
+
   { key: 'rating',      label: 'Оцінка',    sortable: true },
   { key: 'brand',       label: 'Бренд',     sortable: true },
   { key: 'category',    label: 'Категорія', sortable: true },
@@ -145,7 +146,7 @@ function sortIcon(col: string) {
             <td class="cell-desc">{{ product.description }}</td>
 
             <!-- Ціна -->
-            <td class="cell-price">${{ product.price }}</td>
+             <td class="cell-price">${{ product.price }}</td>
 
             <!-- Оцінка (color coded) -->
             <td class="cell-rating"
@@ -171,7 +172,6 @@ function sortIcon(col: string) {
         </table>
       </div>
 
-      <!-- ── Pagination ─────────────────────────────────────────────────── -->
       <div class="pagination">
         <span class="pagination-info">
           Показано {{ (page - 1) * pageSize + 1 }}–{{ Math.min(page * pageSize, totalRows) }}
